@@ -1,6 +1,6 @@
 # PyV8 Emmet Loader Sublime Text Plugin Example
 
-This is a very simple plugin that evaluates JavaScript code using PyV8 Emmet Loader
+This is a very simple plugin that evaluates JavaScript code using [PyV8 Emmet Loader](https://github.com/pichillilorenzo/pyv8-emmet-loader)
 
 Install it manually by copying the folder into the Sublime Text Packages folder.
 
