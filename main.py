@@ -1,16 +1,5 @@
 import sublime, sublime_plugin
 import traceback
-import sys, os, imp
-
-BASE_PATH = os.path.abspath(os.path.dirname(__file__))
-PACKAGES_PATH = sublime.packages_path() or os.path.dirname(BASE_PATH)
-sys.path += [BASE_PATH] + [os.path.join(BASE_PATH, f) for f in ['pyv8-emmet-loader']]
-
-if 'pyv8-emmet-loader' in sys.modules:
-  imp.reload(sys.modules['pyv8-emmet-loader'])
-
-import "pyv8-emmet-loader".emmet_pyv8_installer
-import "pyv8-emmet-loader".pyv8_loader as pyv8_loader
 
 # ================================== #
 #                                    #
@@ -20,6 +9,8 @@ import "pyv8-emmet-loader".pyv8_loader as pyv8_loader
 #       import pyv8_loader           #
 #                                    #
 # ================================== #
+
+import pyv8_loader
 
 class try_pyv8_nowCommand(sublime_plugin.TextCommand):
 
